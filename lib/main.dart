@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_1st_project/pages/home_page.dart';
+import 'package:flutter_1st_project/pages/login_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,11 +12,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text("Welcome to my flutter project"),
-        ),
+      themeMode: ThemeMode.light, // Specifies light mode
+      theme: ThemeData(primarySwatch: Colors.brown),
+      darkTheme: ThemeData(
+        // Dark theme
+        brightness: Brightness.dark,
       ),
+      initialRoute: "/", // Specifies the initial route
+      routes: {
+        "/": (context) => const LoginPage(),
+        "Login": (context) => const HomePage(),
+      },
     );
   }
 }
