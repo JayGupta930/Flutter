@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_1st_project/widgets/drawer.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -22,7 +24,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: const Drawer(), // Placed the drawer inside Scaffold
+      drawer: MyDrawer(), // Placed the drawer inside Scaffold
     );
   }
 }
