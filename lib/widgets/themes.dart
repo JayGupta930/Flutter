@@ -1,0 +1,17 @@
+import 'package:flutter/material.dart';
+
+import 'package:google_fonts/google_fonts.dart';
+
+class MyTheme {
+  static ThemeData get themeData => ThemeData(
+      primarySwatch: Colors.brown,
+      fontFamily: GoogleFonts.lato().fontFamily,
+      appBarTheme: const AppBarTheme(
+        color: Colors.white,
+        elevation: 0.0,
+      ));
+}
+
+ThemeData get darkTheme => ThemeData(
+      brightness: Brightness.dark,
+    );

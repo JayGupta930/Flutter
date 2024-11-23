@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: MyDrawer(), // Placed the drawer inside Scaffold
+      drawer: const MyDrawer(), // Placed the drawer inside Scaffold
     );
   }
 }
